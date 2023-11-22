@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taškų skaičiavimo žaidimas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="countOne">0</h1>
+        <h1>to</h1>
+        <h1 id="countTwo">0</h1>
+    </header>
+    <section class="playing">
+        <p>Playing to</p>
+        <p id="result">0</p>
+    </section>
+    <section class="input">
+        <input id="input" type="number">
+    </section>
+
+    <img id="winnerImage" src="giphy.gif" alt="winner" style="display: none;">
+
+    <section class="buttons">
+        <button class="buttonOne" onclick="plusOnePlayerOne()">Player one</button>
+        <button class="buttonTwo" onclick="plusOnePlayerTwo(countTwo)">Player two</button>
+        <button id="buttonReset" onclick="reset()">reset</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
